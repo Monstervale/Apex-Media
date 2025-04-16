@@ -366,22 +366,33 @@ export const teamDetails = [
         height: 191
 
     },
+    // {
+    //     id: 3,
+    //     src: "/svg/avatar/image 29.svg",
+    //     name: "Riz",
+    //     position: "Business Development Director",
+    //     description: "Deep industry connections and expertise in securing partnerships",
+    //     mobileWidth: 124,
+    //     mobileHeight: 124,
+    //     width: 191,
+    //     height: 191
+    // },
+
     {
         id: 3,
         src: "/svg/avatar/image 29.svg",
-        name: "Riz",
-        position: "Business Development Director",
+        name: "Moe",
+        position: "Business development Director",
         description: "Deep industry connections and expertise in securing partnerships",
         mobileWidth: 124,
         mobileHeight: 124,
         width: 191,
         height: 191
     },
-
     {
         id: 4,
         src: "/svg/avatar/image 30.svg",
-        name: "Moe",
+        name: "Jared",
         position: "Sales Director",
         description: "Talent for closing deals and driving client acquisition in the crypto space",
         mobileWidth: 124,
@@ -437,7 +448,7 @@ export const caseStudiesItems = [
         ath: "ATH: $687.94M MC",
         coinName: "$BRISE",
         description: "Executed high-impact influencer campaigns that drove massive \n" +
-            "exposure and engagement for Bitgert ",
+            "exposure and engagement for Bitgert.",
         service: "Services: Influencer & KOL Marketing",
         logoClassName: "#080825",
         boxShadowStyle: "0px 0px 20px 0px rgba(90, 90, 90, 0.35)",
@@ -455,7 +466,7 @@ export const caseStudiesItems = [
         ath: "ATH: $1.44B MC",
         coinName: "$elon",
         description: "Led strategic influencer campaigns that boosted trading volume \n" +
-            "and strengthened market momentum",
+            "and strengthened market momentum.",
         service: "Services: Influencer & KOL Marketing",
         logoClassName: "#252944",
         boxShadowStyle: "0px 0px 20px 0px rgba(90, 90, 90, 0.55)",
@@ -474,7 +485,7 @@ export const caseStudiesItems = [
         ath: "ATH: $94.65M MC",
         coinName: "$eSE",
         description: "Drove substantial engagement through influencer-driven \n" +
-            "campaigns, elevating brand awareness and presence",
+            "campaigns, elevating brand awareness and presence.",
         service: "Services: Influencer & KOL Marketing",
         logoClassName: "#101010",
         boxShadowStyle: "0px 0px 20px 0px rgba(90, 90, 90, 0.35)",
@@ -488,7 +499,7 @@ export const caseStudiesItems = [
         name: "Befe",
         ath: "ATH: $111.79M MC",
         coinName: "$BEFE",
-        description: "Executed high-impact influencer marketing campaigns that drove significant market cap growth",
+        description: "Executed high-impact influencer marketing campaigns that drove significant market cap growth.",
         service: "Services: Influencer & KOL Marketing",
         logoClassName: "#04441F",
         boxShadowStyle: " 0px 0px 20px 0px rgba(90, 90, 90, 0.65)",
@@ -518,7 +529,7 @@ export const caseStudiesItems = [
         ath: "Raised over $100K",
         coinName: "$UibT",
         description: "Raised over $100K through private funding rounds, ensuring \n" +
-            "early traction for the project",
+            "early traction for the project.",
         service: "Services: Fundraising",
         logoClassName: "#0F27BD",
         boxShadowStyle: "0px 0px 20px 0px rgba(90, 90, 90, 0.35)",
@@ -546,5 +557,33 @@ export const caseStudiesItems = [
         img2Height: 47,
         imgSrc2: "/svg/logo/clus-text.svg",
         type: "col"
+    },
+    {
+        id: 8,
+        name: "Gameness",
+        ath: "Secured early-stage capital",
+        description: "Successfully secured early stage capital through VC \n" +
+            "partnerships and conducted pre-launch marketing.",
+        service: "Services: Fundraising, Influencer & KOL Marketing",
+        logoClassName: "#000000",
+        boxShadowStyle: "0px 0px 20px 0px rgba(90, 90, 90, 0.35)",
+        imgSrc1: "/png/image 42.png",
+        img1Width: 165,
+        img1Height: 16,
+        type: "row"
+    },
+    {
+        id: 9,
+        name: "ZkAGI",
+        ath: "Secured early-stage capital",
+        description: "Successfully secured early stage capital through \n" +
+            "VC partnerships and conducted pre-launch marketing.",
+        service: "Services: Fundraising, Influencer & KOL Marketing",
+        logoClassName: "#FFFFFF",
+        boxShadowStyle: "0px 0px 20px 0px rgba(90, 90, 90, 0.35)",
+        imgSrc1: "/png/image 41.png",
+        img1Width: 160,
+        img1Height: 90,
+        type: "row"
     },
 ]

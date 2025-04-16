@@ -105,7 +105,7 @@ const AboutMeet = () => {
                                 <div className="text-[12px] md:text-[16px] text-white font-medium leading-[24px]">
                                     {team.position}
                                 </div>
-                                <div className="text-[16px] font-[400px] text-[#A6A6A6] leading-[24px]">
+                                <div className="text-[14px] md:text-[16px] font-[400px] text-[#A6A6A6] md:leading-[24px]">
                                     {team.description}
                                 </div>
                             </div>

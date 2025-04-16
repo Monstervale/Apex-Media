@@ -44,6 +44,9 @@ const MyComponent = () => {
                     <Link href={"https://t.me/apexmediahub"} target="_blank" rel="noopener noreferrer">
                         <Image src={"/svg/send.svg"} alt={"send"} width={20} height={17}/>
                     </Link>
+                    <Link href={"https://x.com/ApexMediaHub"} target="_blank" rel="noopener noreferrer">
+                        <Image src={"/svg/logo/X-logo.svg"} alt={"x"} width={16} height={15}/>
+                    </Link>
                 </div>
 
                 <div
