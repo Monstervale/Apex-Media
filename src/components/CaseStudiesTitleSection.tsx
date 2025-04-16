@@ -45,7 +45,7 @@ const CaseStudiesTitleSection = () => {
             <div className="hidden z-10 md:flex gap-4 items-center justify-center h-full">
                 <Link href={"/contact-us"}>
                     <Button className="font-outfit text-[16px] font-medium" variant={"transparent"}>
-                        Work With US
+                        Work With Us
                     </Button>
                 </Link>
                 <Link href={"/services"}>

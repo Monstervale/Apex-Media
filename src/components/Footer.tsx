@@ -25,12 +25,21 @@ const MyComponent = () => {
                 {/*    It is essentially a crypto marketing agency*/}
                 {/*</div>*/}
 
-                <div>
+                <div className={"flex flex-col items-center justify-center w-full gap-[16px]"}>
                     <Link href={"https://t.me/apex_goku"} target="_blank" rel="noopener noreferrer">
                         <Button variant={"transparent"} className="text-[12px] md:text-[16px] font-outfit font-medium">
                             <div className="flex items-center justify-between gap-4">
                                 <Image src={'/svg/Arrow 8.svg'} alt={"arrow"} width={12.971} height={6}/>
                                 <span>Direct Message</span>
+                            </div>
+                        </Button>
+                    </Link>
+
+                    <Link href={"https://drive.google.com/file/d/1COWrP-6Aoc_ik49veeZUDkC11vgEYnsD/view"} target="_blank" rel="noopener noreferrer">
+                        <Button variant={"transparent"} className="text-[12px] md:text-[16px] font-outfit font-medium">
+                            <div className="flex items-center justify-between gap-4">
+                                {/*<Image src={'/svg/Arrow 8.svg'} alt={"arrow"} width={12.971} height={6}/>*/}
+                                <span>Deck</span>
                             </div>
                         </Button>
                     </Link>

@@ -382,7 +382,7 @@ export const teamDetails = [
         id: 3,
         src: "/svg/avatar/image 29.svg",
         name: "Moe",
-        position: "Business development Director",
+        position: "Business Development Director",
         description: "Deep industry connections and expertise in securing partnerships",
         mobileWidth: 124,
         mobileHeight: 124,
