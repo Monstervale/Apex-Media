@@ -21,9 +21,7 @@ const PdfPage = () => {
 
             <main className={`flex items-center justify-center flex-col w-full`}>
                 <PDFIframeViewer
-                    pdfUrl="/docs/pitchdeck.pdf"
-                    height="800px"
-                    title="Sample PDF Document"
+                    url="/docs/pitchdeck.pdf"
                 />
             </main>
 
