@@ -56,9 +56,7 @@ export default function PDFViewer({url}: PDFViewerProps) {
             }
         };
 
-        setIsLoading(false);
-
-        loadPDF().catch(console.error);
+        loadPDF().catch(console.error).finally(() => setIsLoading(false));
 
         // Cleanup on unmounting
         return () => {
