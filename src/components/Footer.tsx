@@ -1,3 +1,5 @@
+'use client'
+
 import Image from "next/image";
 import {navItems} from "@/lib/constants";
 import Link from "next/link";
@@ -25,9 +27,9 @@ const MyComponent = () => {
                 {/*    It is essentially a crypto marketing agency*/}
                 {/*</div>*/}
 
-                <div className={"flex flex-col items-center justify-center w-full gap-[16px]"}>
+                <div className={"flex items-center justify-center w-full gap-[16px]"}>
                     <Link href={"https://t.me/apex_goku"} target="_blank" rel="noopener noreferrer">
-                        <Button variant={"transparent"} className="text-[12px] md:text-[16px] font-outfit font-medium">
+                        <Button variant={"transparent"} className="text-[12px] md:text-[16px] font-outfit font-medium w-[130px] md:w-[190px]">
                             <div className="flex items-center justify-between gap-4">
                                 <Image src={'/svg/Arrow 8.svg'} alt={"arrow"} width={12.971} height={6}/>
                                 <span>Direct Message</span>
@@ -35,14 +37,13 @@ const MyComponent = () => {
                         </Button>
                     </Link>
 
-                    {/*<Link href={"https://drive.google.com/file/d/1COWrP-6Aoc_ik49veeZUDkC11vgEYnsD/view"} target="_blank" rel="noopener noreferrer">*/}
-                    {/*    <Button variant={"transparent"} className="text-[12px] md:text-[16px] font-outfit font-medium">*/}
-                    {/*        <div className="flex items-center justify-between gap-4">*/}
-                    {/*            /!*<Image src={'/svg/Arrow 8.svg'} alt={"arrow"} width={12.971} height={6}/>*!/*/}
-                    {/*            <span>Deck</span>*/}
-                    {/*        </div>*/}
-                    {/*    </Button>*/}
-                    {/*</Link>*/}
+                    <Button onClick={() => window.open('/docs/pitchdeck.pdf', '_blank')} variant={"transparent"}
+                            className="text-[12px] md:text-[16px] w-[130px] md:w-[190px] font-outfit font-medium">
+                        <div className="flex items-center justify-between gap-4">
+                            {/*<Image src={'/svg/Arrow 8.svg'} alt={"arrow"} width={12.971} height={6}/>*/}
+                            <span>Deck</span>
+                        </div>
+                    </Button>
                 </div>
 
                 <div className="font-outfit text-[#FF9A70] font-[500] text-[24px] flex">
@@ -62,11 +63,12 @@ const MyComponent = () => {
                     className="text-white flex-col gap-6 w-full md:max-w-[497px] flex items-center justify-between  text-[16px] md:text-[24px] font-outfit underline decoration-solid font-[500]">
 
                     <div className="flex w-full items-center justify-between">
-                    {navItems.slice(0, 3).map((item) => (
-                        <div key={item.id} className="w-full flex items-center justify-center hover:text-gray-400">
-                            {item.id === 2 ? <Link href={item.href}>{item.label}</Link> : <Link href={item.href}>{item.label}</Link>}
-                        </div>
-                    ))}
+                        {navItems.slice(0, 3).map((item) => (
+                            <div key={item.id} className="w-full flex items-center justify-center hover:text-gray-400">
+                                {item.id === 2 ? <Link href={item.href}>{item.label}</Link> :
+                                    <Link href={item.href}>{item.label}</Link>}
+                            </div>
+                        ))}
                     </div>
 
                     <div className="flex items-center px-4 justify-center md:hidden w-full h-[1px] ">
