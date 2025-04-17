@@ -1,8 +1,9 @@
 'use client';
 
-import {useEffect, useRef} from 'react';
+import {useEffect, useRef, useState} from 'react';
 import * as pdfJS from 'pdfjs-dist';
 import type {PDFDocumentProxy, PDFPageProxy} from 'pdfjs-dist';
+import {PulsingDotsLoader} from "@/components/PulsingDotsLoader";
 
 interface PDFViewerProps {
     url: string;
@@ -11,6 +12,7 @@ interface PDFViewerProps {
 export default function PDFViewer({url}: PDFViewerProps) {
     const containerRef = useRef<HTMLDivElement>(null);
     const isMounted = useRef(false);
+    const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
         // Prevent running on server or multiple times
@@ -54,15 +56,22 @@ export default function PDFViewer({url}: PDFViewerProps) {
             }
         };
 
+        setIsLoading(false);
+
         loadPDF().catch(console.error);
 
-        // Cleanup on unmount
+        // Cleanup on unmounting
         return () => {
             if (containerRef.current) {
+                // eslint-disable-next-line react-hooks/exhaustive-deps
                 containerRef.current.innerHTML = ''; // Clear canvases
             }
+            setIsLoading(false);
         };
     }, [url]);
 
-    return <div ref={containerRef} style={{width: '100%'}}/>;
+    return (<>
+        {isLoading && (<PulsingDotsLoader/>)}
+        <div ref={containerRef} style={{width: '100%'}}/>
+    </>);
 }
