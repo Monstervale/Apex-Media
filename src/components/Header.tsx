@@ -50,11 +50,11 @@ const Header = () => {
                         </li>
                     ))}
 
-                    <li
-                        onClick={() => window.open('/docs/pitchdeck.pdf', '_blank')}
+                    <Link
+                        href={"/pdf"}
                         className="hidden md:inline-block cursor-pointer hover:text-orange-500 transition-colors duration-100 ease-in-out">
                         Deck
-                    </li>
+                    </Link>
                 </nav>
 
                 <div

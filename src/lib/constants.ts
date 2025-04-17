@@ -50,6 +50,12 @@ export const mobileNavItems = [
         href: "/contact-us",
         label: "Contact Us",
     },
+    {
+        id: 6,
+        href: "/pdf",
+        label: "Deck",
+    },
+
 
 ]
 

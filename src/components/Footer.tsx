@@ -29,7 +29,8 @@ const MyComponent = () => {
 
                 <div className={"flex items-center justify-center w-full gap-[16px]"}>
                     <Link href={"https://t.me/apex_goku"} target="_blank" rel="noopener noreferrer">
-                        <Button variant={"transparent"} className="text-[12px] md:text-[16px] font-outfit font-medium w-[130px] md:w-[190px]">
+                        <Button variant={"transparent"}
+                                className="text-[12px] md:text-[16px] font-outfit font-medium w-[130px] md:w-[190px]">
                             <div className="flex items-center justify-between gap-4">
                                 <Image src={'/svg/Arrow 8.svg'} alt={"arrow"} width={12.971} height={6}/>
                                 <span>Direct Message</span>
@@ -37,13 +38,15 @@ const MyComponent = () => {
                         </Button>
                     </Link>
 
-                    <Button onClick={() => window.open('/docs/pitchdeck.pdf', '_blank')} variant={"transparent"}
-                            className="text-[12px] md:text-[16px] w-[130px] md:w-[190px] font-outfit font-medium">
-                        <div className="flex items-center justify-between gap-4">
-                            {/*<Image src={'/svg/Arrow 8.svg'} alt={"arrow"} width={12.971} height={6}/>*/}
-                            <span>Deck</span>
-                        </div>
-                    </Button>
+                    <Link href={"/pdf"}>
+                        <Button variant={"transparent"}
+                                className="text-[12px] md:text-[16px] w-[130px] md:w-[190px] font-outfit font-medium">
+                            <div className="flex items-center justify-between gap-4">
+                                {/*<Image src={'/svg/Arrow 8.svg'} alt={"arrow"} width={12.971} height={6}/>*/}
+                                <span>Deck</span>
+                            </div>
+                        </Button>
+                    </Link>
                 </div>
 
                 <div className="font-outfit text-[#FF9A70] font-[500] text-[24px] flex">

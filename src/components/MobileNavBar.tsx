@@ -12,10 +12,6 @@ interface MobileNavBarProps {
 const MobileNavBar = ({isMenuOpen, setIsMenuOpen}: MobileNavBarProps) => {
     // const [isServicesOpen, setIsServicesOpen] = useState(false);
 
-    const handleOpenDeck = () => {
-        setIsMenuOpen(false);
-        window.open('/docs/pitchdeck.pdf', '_blank')
-    }
     return (
         <div
             className={`fixed w-full min-h-screen overflow-x-scroll z-20 top-0 transition-all duration-300 ease-in-out md:hidden bg-black ${isMenuOpen ? 'left-0' : 'left-[-100%]'}`}>
@@ -55,13 +51,6 @@ const MobileNavBar = ({isMenuOpen, setIsMenuOpen}: MobileNavBarProps) => {
                         </Link>
                     ))}
 
-                    <div
-                        onClick={handleOpenDeck}
-                        className="flex items-center justify-center text-[24px] w-full  font-medium font-outfit cursor-pointer"
-                        // onClick={toggleMenu} // Clicking an item should close the menu
-                    >
-                        Deck
-                    </div>
 
                     {/*/!* Services with Dropdown *!/*/}
                     {/*<Link href={"/services"}>*/}
