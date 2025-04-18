@@ -52,7 +52,7 @@ export const mobileNavItems = [
     },
     {
         id: 6,
-        href: "/pdf",
+        href: "/deck",
         label: "Deck",
     },
 
@@ -592,4 +592,43 @@ export const caseStudiesItems = [
         img1Height: 90,
         type: "row"
     },
+]
+
+export const slides = [
+    {
+        id: 1,
+        src: "/slides/01.png",
+        alt: "s1"
+    },
+    {
+        id: 2,
+        src: "/slides/02.png",
+        alt: "s2"
+    },
+    {
+        id: 3,
+        src: "/slides/03.png",
+        alt: "s3"
+    },
+    {
+        id: 4,
+        src: "/slides/04.png",
+        alt: "s4"
+    },
+    {
+        id: 5,
+        src: "/slides/05.png",
+        alt: "s5"
+    },
+    {
+        id: 6,
+        src: "/slides/06.png",
+        alt: "s6"
+    },
+    {
+        id: 7,
+        src: "/slides/07.png",
+        alt: "s7"
+    },
+
 ]

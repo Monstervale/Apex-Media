@@ -38,7 +38,7 @@ const MyComponent = () => {
                         </Button>
                     </Link>
 
-                    <Link href={"/pdf"}>
+                    <Link href={"/deck"}>
                         <Button variant={"transparent"}
                                 className="text-[12px] md:text-[16px] w-[130px] md:w-[190px] font-outfit font-medium">
                             <div className="flex items-center justify-between gap-4">

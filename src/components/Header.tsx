@@ -51,7 +51,7 @@ const Header = () => {
                     ))}
 
                     <Link
-                        href={"/pdf"}
+                        href={"/deck"}
                         className="hidden md:inline-block cursor-pointer hover:text-orange-500 transition-colors duration-100 ease-in-out">
                         Deck
                     </Link>
