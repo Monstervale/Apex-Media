@@ -12,7 +12,7 @@ const DeckPage = () => {
     return (
         <>
             <div
-                className="w-full flex flex-col items-center gap-[60px] mx-auto justify-center min-h-screen pt-[80px] lg:pt-[100px] text-white">
+                className="w-full flex flex-col items-center gap-[60px] mx-auto justify-center min-h-screen pt-[80px] lg:pt-[100px] text-white pb-6 lg:pb-10">
 
                 {/*<div className={"w-full flex flex-col gap-4 items-center max-w-[1440px]"}>*/}
                 {/*    {slides.map((slide) => (*/}
@@ -23,8 +23,8 @@ const DeckPage = () => {
                 <ReactPdfViewer file="/docs/pitchdeck.pdf"/>
 
             </div>
-            <Footer/>
 
+            <Footer/>
         </>
 
     );
