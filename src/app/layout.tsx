@@ -34,6 +34,12 @@ export const metadata: Metadata = {
     title: "Apex Media",
     description: "The pinnacle of Crypto Marketing",
     icons: "/APEX-logo.svg",
+    other: {
+        developer: "Muhammed Jamzeeth - Full-Stack Developer",
+        role: "Full-Stack Developer",
+        portfolio: "https://muhammedjamzeeth.com/",
+        developerContact: "https://www.linkedin.com/in/muhammed-jamzeeth"
+    }
 };
 
 export default function RootLayout({
